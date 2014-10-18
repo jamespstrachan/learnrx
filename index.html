@@ -1289,7 +1289,7 @@ Array.prototype.mergeAll = function() {
         result = arr.mergeAll();
         result = result.sortBy(function(x) { return x; });
         if (JSON.stringify(result) !== expected) {
-            throw 'Expected that [1,2,3].map(function(x) { return x + 1}) would equal [2,3,4].'
+            throw 'Expected that [[1,2,3],[4,5,6],[7,8,9]].mergeAll() would equal [1,2,3,4,5,6,7,8,9].'
         }
     }        
     </pre>
